@@ -9,4 +9,5 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class TagDto {
     Long id;
+    String libelle;
 }

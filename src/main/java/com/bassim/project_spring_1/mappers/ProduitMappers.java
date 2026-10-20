@@ -32,6 +32,7 @@ public class ProduitMappers {
         ProduitDto dto = new ProduitDto();
         BeanUtils.copyProperties(produit, dto, "categorie", "fournisseur", "detailProduit", "tags");
         CategorieDto catDto = new CategorieDto();
+        catDto.setId(produit.getCategorie().getId());
         BeanUtils.copyProperties(produit.getCategorie(), catDto);
         dto.setCategorie(catDto);
         FournisseurDto fDto = new FournisseurDto();
@@ -64,4 +65,11 @@ public class ProduitMappers {
         produit.setTags(tags);
         return produit;
     }
+
+    public void copyDTO(ProduitDto prodSource,ProduitDto prodTarget){
+
+        BeanUtils.copyProperties(prodSource,prodTarget);
+
+    }
+
 }

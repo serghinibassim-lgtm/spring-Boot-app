@@ -1,5 +1,6 @@
 package com.bassim.project_spring_1.dtos;
 
+import com.bassim.project_spring_1.models.Categorie;
 import lombok.Data;
 import java.math.BigDecimal;
 import java.time.LocalDate;

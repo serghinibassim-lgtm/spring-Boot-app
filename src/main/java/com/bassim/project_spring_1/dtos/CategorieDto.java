@@ -9,4 +9,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class CategorieDto {
     Long id;
+    String nom;
+    String description;
 }

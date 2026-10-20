@@ -9,4 +9,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class FournisseurDto {
     Long id;
+    String nom;
+    String contact;
+    String adresse;
 }
